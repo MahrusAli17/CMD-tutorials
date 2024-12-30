@@ -1,0 +1,49 @@
+Topic I - Introduction to Commands prompt
+
+1. dir
+Description: Displays a list of files and subdirectories in a directory.
+Example:-
+C:\Users\Mahrus Ali> dir
+
+2. cls
+Description: Clears the screen.
+Example:-
+C:\Users\Mahrus Ali> cls
+
+3. cd
+Description: Changes the current directory.
+Example:-
+C:\Users\Mahrus Ali> cd Desktop
+ 
+4. md / mkdir
+Description: Creates a new directory or folder.
+Example:-
+C:\Users\Mahrus Ali> md "CMD List"
+C:\Users\Mahrus Ali> mkdir "CMD List"
+
+5. rd / rmdir
+Description: Removes a directory or folder (must be empty).
+Example:-
+C:\Users\Mahrus Ali> rd "CMD List"
+C:\Users\Mahrus Ali> rmdir "CMD List"
+
+6. rd folder-name /S 
+Description: Removes a directory and all its contents (subdirectories and files).
+Example:-
+C:\Users\Mahrus Ali> rd "CMD List" /S 
+C:\Users\Mahrus Ali> rmdir "CMD List" /S 
+
+7. rd /?
+Description: Displays help information for the rd / rmdir command.
+Example:-
+C:\Users\Mahrus Ali> rmdir /?
+
+8. cd ..
+Description: Changes the location toward parent directory.
+Example:-
+C:\Users\Mahrus Ali> cd ..
+
+9. cd /
+Description: Changes to the root directory of the current drive.
+Example:-
+C:\Users\Mahrus Ali> cd /
