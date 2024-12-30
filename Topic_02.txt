@@ -1,0 +1,49 @@
+Topic II - Basic Files and Folders Operations - Create Copy Move and Delete Commands
+
+1. cd drive-name:
+•	Description: Changes the current drive.
+•	Example:-
+                C:\Users\Mahrus Ali> cd D:
+
+2. ren file.txt name.txt
+•	Description: Renames the file.
+•	Syntax: ren [old.format] [new.format]
+•	Example:-
+                C:\Users\Mahrus Ali> ren old.txt new.txt
+
+3. copy file-name path
+•	Description: Copies a file to a specified location.
+•	Syntax: copy [file-name] (Path where you want to paste) 
+•	Example:-
+                C:\Users\Mahrus Ali\Desktop\Alfa> copy one.txt "C:\Users\Mahrus Ali\Desktop"
+
+4. paste file-name path
+•	Description: moves a file to a specified location.
+•	Syntax: move [file-name] (Path where you want to paste) 
+•	Example:-
+                C:\Users\Mahrus Ali\Desktop\Alfa> move one.txt "C:\Users\Mahrus Ali\Desktop"
+
+5. del file.format (Single Files)
+•	Description: Deletes a specific file.
+•	Example:-
+                C:\Users\Mahrus Ali\Desktop> del one.txt
+
+6. del *.format (Multiple Files)
+•	Description: Deletes all files with a  specific format in the current directory.
+•	Example:-
+                C:\Users\Mahrus Ali\Desktop> del *.txt
+
+7. echo This is a sample text. > example.txt
+•	Description: Creates a file with the specified text.
+•	Example:-
+                C:\Users\Mahrus Ali\Desktop> echo This is a sample text > file.txt
+
+8. echo This is also crazy sample text. >> example.txt
+•	Description: Creates a file with the specified text.
+•	Example:-
+                C:\Users\Mahrus Ali\Desktop> echo This is also crazy sample text >> file.txt
+
+9. copy con example.txt
+•	Description: Creates a file and allows you to input text directly from the console.
+•	Example:
+                C:\Users\Mahrus Ali>copy con example.txt
