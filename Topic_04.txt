@@ -1,0 +1,17 @@
+Topic IV - Getting Information using WMIC commands in CMD
+1. Initialize WMIC Command
+•	Description: Starts the WMIC environment.
+•	Example:-
+                C:\Users\Mahrus Ali>wmic
+
+2. cpu
+•	Description: Queries information about the CPU.
+•	Example:-
+                wmic:root\cli>cpu
+
+3.quit
+•	Description: Exits the WMIC environment.
+•	Example:-
+                wmic:root\cli>quit
+
+ 
