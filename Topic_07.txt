@@ -1,0 +1,63 @@
+VII - User Management using CMD – Adding & Deleting Resetting users
+
+1. lusrmgr.msc			
+•	Example:- view Local users and group users
+
+            C:\Users\Mahrus Ali> netsh int tcp set global autotuninglevel=disabled
+•	Example:
+
+
+
+1. Add a New User
+•	Description: To add a user
+•	Syntax: net user [username] [password] /add
+•	Example:-  
+                    net user mahrus123 password123 /add
+
+2. Assign the User to Administrators Group
+•	Description: To give administrative rights
+•	Syntax: net localgroup administrators [username] /add
+•	Example:-  
+                    net localgroup administrators mahrus123 /add
+
+3. Delete a User
+•	Description: To remove a user  
+•	Syntax: net user [username] /delete
+•	Example:-  
+                    net user mahrus123 /delete
+
+4. Reset User Password
+•	Description: To reset a password
+•	Syntax: net user [username] [newpassword]
+•	Example:- 
+                    net user mahrus123 newpassword321
+
+5. List All Users
+•	Description: To view all users on the system
+•	Syntax: net user
+•	Example:-
+                    net user 
+
+6. Disable a User Account
+•	Description: To disable a user
+•	Syntax: net user [username] /active:no
+•	Example:-
+                    net user mahrus123 /active:no
+
+7. Enable a User Account
+•	Description: To re-enable a user
+•	Syntax: net user [username] /active:yes
+•	Example:-  
+                    net user mahrus123 /active:yes
+
+8.  Users Info
+•	Description: To get users information
+•	Syntax: net user "user-name"
+•	Example:-
+                    net user "Mahrus Ali"
+
+9. Add a New User with expiry date
+•	Description: To add a new user with expiry date
+•	Syntax: net user [username] [password] /add /expires:date
+•	Example:-  
+                    net user mahrus123 password123 /add /expires:12/31/2027
