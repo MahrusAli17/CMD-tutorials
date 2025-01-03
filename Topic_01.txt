@@ -1,49 +1,52 @@
 Topic I - Introduction to Commands prompt
 
-1. dir
-•	Description: Displays a list of files and subdirectories in a directory.
-•	Example:-
-                    C:\Users\Mahrus Ali> dir
+--------------------------------------------------------------------------------------------------
+Open CMD
+•	Search for "cmd" in the Start menu and open it.
 
-2. cls
-•	Description: Clears the screen.
-•	Example:-
-                    C:\Users\Mahrus Ali> cls
+--------------------------------------------------------------------------------------------------
+Show Current Directory
+•	cd
 
-3. cd
-•	Description: Changes the current directory.
-•	Example:-
-                    C:\Users\Mahrus Ali> cd Desktop
- 
-4. md / mkdir
-•	Description: Creates a new directory or folder.
-•	Example:-
-                    C:\Users\Mahrus Ali> md "CMD List"
-                    C:\Users\Mahrus Ali> mkdir "CMD List"
+--------------------------------------------------------------------------------------------------
+Change Directory
+•	cd [path]
+•	Example: - cd C:\Users
 
-5. rd / rmdir
-•	Description: Removes a directory or folder (must be empty).
-•	Example:-
-                    C:\Users\Mahrus Ali> rd "CMD List"
-                    C:\Users\Mahrus Ali> rmdir "CMD List"
+--------------------------------------------------------------------------------------------------
+Move Up One Directory
+•	cd ..
 
-6. rd folder-name /S 
-•	Description: Removes a directory and all its contents (subdirectories and files).
-•	Example:-
-                    C:\Users\Mahrus Ali> rd "CMD List" /S 
-                    C:\Users\Mahrus Ali> rmdir "CMD List" /S 
+--------------------------------------------------------------------------------------------------
+List Files and Folders in the Current Directory
+•	dir
 
-7. rd /?
-•	Description: Displays help information for the rd / rmdir command.
-•	Example:-
-                    C:\Users\Mahrus Ali> rmdir /?
+--------------------------------------------------------------------------------------------------
+Clear the Screen
+•	cls
 
-8. cd ..
-•	Description: Changes the location toward parent directory.
-•	Example:-
-                    C:\Users\Mahrus Ali> cd ..
+--------------------------------------------------------------------------------------------------
+Open a Specific Drive
+•	[drive_letter]:
+•	Example: - D:
 
-9. cd /
-•	Description: Changes to the root directory of the current drive.
-•	Example:-
-                    C:\Users\Mahrus Ali> cd /
+--------------------------------------------------------------------------------------------------
+Create a New Directory
+•	mkdir [folder_name]
+•	Example: - mkdir MyFolder
+
+--------------------------------------------------------------------------------------------------
+Remove Directory with Files & Folders
+•	rd [folder_name] /S
+•	Example: - rd MyFolder /S
+
+--------------------------------------------------------------------------------------------------
+Delete a Directory
+•	rmdir [folder_name]
+•	Example: - rmdir MyFolder
+
+--------------------------------------------------------------------------------------------------
+Exit Command Prompt
+exit
+
+--------------------------------------------------------------------------------------------------
