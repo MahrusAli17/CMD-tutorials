@@ -1,79 +1,99 @@
 Topic IV - Getting Information using WMIC commands in CMD
-
+--------------------------------------------------------------------------------------------------
 1. Initialize WMIC Command
    •	 wmic
    •	 Example: wmic
 
+--------------------------------------------------------------------------------------------------
 2. Query CPU Information
    •	 cpu
    •	 Example: wmic:root\cli> cpu
 
+--------------------------------------------------------------------------------------------------
 3. Exit WMIC Environment
    •	 quit
    •	 Example: wmic:root\cli> quit
 
+--------------------------------------------------------------------------------------------------
 Here are 15 additional WMIC commands related to system management:
-
+--------------------------------------------------------------------------------------------------
 4. Query BIOS Information
    •	 bios
    •	 Example: wmic:root\cli> bios
 
+--------------------------------------------------------------------------------------------------
 5. Query Operating System Information
    •	 os
    •	 Example: wmic:root\cli> os
 
+--------------------------------------------------------------------------------------------------
 6. Query Disk Drive Information
    •	 diskdrive
    •	 Example: wmic:root\cli> diskdrive
 
+--------------------------------------------------------------------------------------------------
 7. Query Memory Information
    •	 memorychip
    •	 Example: wmic:root\cli> memorychip
 
+--------------------------------------------------------------------------------------------------
 8. Query Network Adapter Information
    •	 nic
    •	 Example: wmic:root\cli> nic
 
+--------------------------------------------------------------------------------------------------
 9. Query Processes
    •	 process
    •	 Example: wmic:root\cli> process
 
+--------------------------------------------------------------------------------------------------
 10. Query User Accounts
     •	 useraccount
     •	 Example: wmic:root\cli> useraccount
 
+--------------------------------------------------------------------------------------------------
 11. Query Installed Software
     •	 product
     •	 Example: wmic:root\cli> product
 
+--------------------------------------------------------------------------------------------------
 12. Query Services
     •	 service
     •	 Example: wmic:root\cli> service
 
+--------------------------------------------------------------------------------------------------
 13. Query Logical Disks
     •	 logicaldisk
     •	 Example: wmic:root\cli> logicaldisk
 
+--------------------------------------------------------------------------------------------------
 14. Query Sound Devices
     •	 sounddev
     •	 Example: wmic:root\cli> sounddev
 
+--------------------------------------------------------------------------------------------------
 15. Query Printers
     •	 printer
     •	 Example: wmic:root\cli> printer
 
+--------------------------------------------------------------------------------------------------
 16. Query Startup Programs
     •	 startup
     •	 Example: wmic:root\cli> startup
 
+--------------------------------------------------------------------------------------------------
 17. Query Environment Variables
     •	 environment
     •	 Example: wmic:root\cli> environment
 
+--------------------------------------------------------------------------------------------------
 18. Query Shared Folders
     •	 share
     •	 Example: wmic:root\cli> share
 
+--------------------------------------------------------------------------------------------------
 19. Query Network Protocols
     •	 netprotocol
     •	 Example: wmic:root\cli> netprotocol
+
+--------------------------------------------------------------------------------------------------
