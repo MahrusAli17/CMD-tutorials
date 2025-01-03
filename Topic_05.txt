@@ -1,65 +1,57 @@
 Topic V - Information Gathering using CMD - Collecting system info
+--------------------------------------------------------------------------------------------------
+1. Retrieve Name and Version of Installed Software Products
+   •	 product get name, version
+   •	 Example: wmic:root\cli> product get name, version
 
-1. product get name, version
-•	Description: Retrieves the name and version of all installed software products.
-•	Example:-
-                wmic:root\cli>product get name
-                wmic:root\cli>product get version
+--------------------------------------------------------------------------------------------------
+2. Retrieve Size and Model of Disk Drives
+   •	 diskdrive get size, model
+   •	 Example: wmic:root\cli> diskdrive get size, model
 
-2. diskdrive get size, model
-•	Description: Retrieves the size and model of disk drives.
-•	Example:-
-                wmic:root\cli>diskdrive get size
-                wmic:root\cli>diskdrive get model
+--------------------------------------------------------------------------------------------------
+3. Retrieve Operating System Name and Version
+   •	 os get name, version
+   •	 Example: wmic:root\cli> os get name, version
 
-3. os get name, version
-•	Description: Retrieves the operating system name and version.
-•	Example:-
-                wmic:root\cli>os get name
-                wmic:root\cli>os get version
+--------------------------------------------------------------------------------------------------
+4. Retrieve Computer System Information
+   •	 computersystem get name, manufacturer, model
+   •	 Example: wmic:root\cli> computersystem get name, manufacturer, model
 
-4. computersystem get name, manufacturer, model
-•	Description: Retrieves the name, manufacturer, and model of the computer system.
-•	Example:-
-                wmic:root\cli>computersystem get name
-                wmic:root\cli>computersystem get manufacturer
-                wmic:root\cli>computersystem get model
+--------------------------------------------------------------------------------------------------
+5. Retrieve BIOS Name and Version
+   •	 bios get name, version
+   •	 Example: wmic:root\cli> bios get name, version
 
-5. bios get name, version
-•	Description: Retrieves the BIOS name and version.
-•	Example:-
-                wmic:root\cli>bios get name
-                wmic:root\cli>bios get version
+--------------------------------------------------------------------------------------------------
+6. Retrieve Network Adapter Information
+   •	 nic get name, macaddress
+   •	 Example: wmic:root\cli> nic get name, macaddress
 
-6. nic get name, macaddress
-•	Description: Retrieves the name and MAC address of network interface cards (NICs).
-•	Example:-
-                wmic:root\cli>nic get name
-                wmic:root\cli>nic get macaddress
+--------------------------------------------------------------------------------------------------
+7. Retrieve Logical Disk Information
+   •	 logicaldisk get name, filesystem, freespace
+   •	 Example: wmic:root\cli> logicaldisk get name, filesystem, freespace
 
-7.logicaldisk get name, filesystem, freespace
-•	Description: Retrieves the name, filesystem, and free space of logical disks.
-•	Example:-
-                wmic:root\cli>logicaldisk get name
-                wmic:root\cli>logicaldisk filesystem
-                wmic:root\cli>logicaldisk freespace
+--------------------------------------------------------------------------------------------------
+8. List Installed Windows Updates (QFE)
+   •	 qfe list
+   •	 Example: wmic:root\cli> qfe list
 
-8. qfe list
-•	Description: Lists all installed Windows updates (Quick Fix Engineering).
-•	Example:-
-                wmic:root\cli>qfe list
+--------------------------------------------------------------------------------------------------
+9. List Startup Programs
+   •	 startup list full
+   •	 Example: wmic:root\cli> startup list full
 
-9. startup list full
-•	Description: Lists all startup programs.
-•	Example:-
-                wmic:root\cli>startup list full
+--------------------------------------------------------------------------------------------------
+10. List User Accounts with Brief Information
+    •	 useraccount list brief
+    •	 Example: wmic:root\cli> useraccount list brief
 
-10. useraccount list brief
-•	Description: Lists user accounts with brief information.
-•	Example:-
-                wmic:root\cli>useraccount list brief
+--------------------------------------------------------------------------------------------------
+11. Terminate Process by Name
+    •	 wmic process where name="process.exe" call terminate
+    •	 Example: wmic process where name="notepad.exe" call terminate
 
-11. wmic process where name="process.exe" call terminate
-•	Description: The command terminates the process with the specified name. It’s useful for stopping programs that might be unresponsive or need to be closed.
-•	Example:-
-                wmic process where name="notepad.exe" call terminate
+--------------------------------------------------------------------------------------------------
