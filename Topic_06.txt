@@ -1,75 +1,88 @@
 Topic VI - Hiding & Encrypting Files using CMD - AES Encryption cipher & attrib
+--------------------------------------------------------------------------------------------------------------
+1. Change File Attributes
+   •	 attrib +h +r +s file.png
+   •	 Description: Changes the attributes of a file to hidden, read-only, and system.
+   •	 Explanation:
+     - +h: Sets the hidden attribute, making the file invisible in the default directory view.
+     - +r: Sets the read-only attribute, preventing the file from being modified.
+     - +s: Sets the system attribute, marking the file as a system file.
+   •	 Example: attrib +h +r +s file.png
 
-1. attrib +h +r +s file.png
-•	Description: Changes the attributes of a file to hidden, read-only, and system.
-•	Explanation:
-                        +h: Sets the hidden attribute, making the file invisible in the default directory view.
-                        +r: Sets the read-only attribute, preventing the file from being modified.
-                        +s: Sets the system attribute, marking the file as a system file.
-•	Example:-
-                    C:\Users\Mahrus Ali>attrib +h +r +s file.png
+--------------------------------------------------------------------------------------------------------------
+2. Remove File Attributes
+   •	 attrib -h -r -s file.png
+   •	 Description: Removes the hidden, read-only, and system attributes from a file.
+   •	 Explanation:
+     - -h: Removes the hidden attribute.
+     - -r: Removes the read-only attribute.
+     - -s: Removes the system attribute.
+   •	 Example: attrib -h -r -s file.png
 
-2. attrib -h -r -s file.png
-•	Description: Removes the hidden, read-only, and system attributes from a file.
-•	Explanation:
-                        -h: Removes the hidden attribute.
-                        -r: Removes the read-only attribute.
-                        -s: Removes the system attribute.
-•	Example:-
-                    C:\Users\Mahrus Ali>attrib -h -r -s file.png
+--------------------------------------------------------------------------------------------------------------
+3. Encrypt File
+   •	 cipher /e file.format
+   •	 Description: Encrypts the specified file(s) or directory.
+   •	 Explanation: 
+     - /e: Encrypts the specified files or directories.
+   •	 Example: cipher /e file.txt
 
-3. cipher /e file.format
-•	Description: Encrypts the specified file(s) or directory.
-•	Explanation:
-                        /e: Encrypts the specified files or directories.
-•	Example:-
-                    C:\Users\Mahrus Ali>cipher /e file.txt
+--------------------------------------------------------------------------------------------------------------
+4. Decrypt File
+   •	 cipher /d file.format
+   •	 Description: Decrypts the specified file(s) or directory.
+   •	 Explanation: 
+     - /d: Decrypts the specified files or directories.
+   •	 Example: cipher /d file.txt
 
-4. cipher /d file.format
-•	Description: Decrypts the specified file(s) or directory.
-•	Explanation:
-                        /d: Decrypts the specified files or directories.
-•	Example:-
-                    C:\Users\Mahrus Ali>cipher /d file.txt
+--------------------------------------------------------------------------------------------------------------
+5. Display Encryption Information
+   •	 cipher /c
+   •	 Description: Displays information about the encryption of a file or directory.
+   •	 Explanation: 
+     - /c: Displays the current encryption state of the specified files.
+   •	 Example: cipher /c file.txt
 
-5. cipher /c
-•	Description: Displays information about the encryption of a file or directory.
-•	Explanation:
-                        /c: Displays the current encryption state of the specified files.
-•	Example:
-                    C:\Users\Mahrus Ali>cipher /c file.txt
+--------------------------------------------------------------------------------------------------------------
+6. Display/Modify File Extension Associations
+   •	 assoc .format
+   •	 Description: Displays or modifies file extension associations.
+   •	 Explanation: 
+     - This command is used to associate a file extension with a specific program.
+   •	 Example to display current association: assoc .txt
+   •	 Example to associate .txt with Notepad: assoc .txt=txtfile
 
-6. assoc .format
-•	Description: Displays or modifies file extension associations.
-•	Explanation:
-                        This command is used to associate a file extension with a specific program.
-•	Example:-      
-                    C:\Users\Mahrus Ali>assoc .txt
-                    C:\Users\Mahrus Ali>assoc .txt=txtfile
-
+--------------------------------------------------------------------------------------------------------------
 Additional Related Commands:
+--------------------------------------------------------------------------------------------------------------
+1. Display/Change File Attributes
+   •	 attrib
+   •	 Description: Displays or changes file attributes.
+   •	 Example: attrib file.txt
 
-7.	attrib
-•	Description: Displays or changes file attributes.
-•	Example:
-                    C:\Users\Mahrus Ali>attrib file.txt
+--------------------------------------------------------------------------------------------------------------
+2. Create New File Encryption Key
+   •	 cipher /k
+   •	 Description: Creates a new file encryption key for the user running the cipher command.
+   •	 Example: cipher /k
 
-8.	cipher /k
-•	Description: Creates a new file encryption key for the user running the cipher command.
-•	Example:
-                    C:\Users\Mahrus Ali>cipher /k
+--------------------------------------------------------------------------------------------------------------
+3. Encrypt Files in Directory
+   •	 cipher /s:directory
+   •	 Description: Performs the encryption operation on all files in the specified directory and its subdirectories.
+   •	 Example: cipher /e /s:C:\Users\Mahrus Ali\Documents
 
-9.	cipher /s:directory
-•	Description: Performs the encryption operation on all files in the specified directory and its subdirectories.
-•	Example:
-                    C:\Users\Mahrus Ali>cipher /e /s:C:\Users\Mahrus Ali\Documents
+--------------------------------------------------------------------------------------------------------------
+4. Display All Associations
+   •	 assoc
+   •	 Description: Displays or modifies file extension associations.
+   •	 Example to display all associations: assoc
+--------------------------------------------------------------------------------------------------------------
+5. Display/Modify File Types
+   •	 ftype
+   •	 Description: Displays or modifies file types that have been assigned file extension associations.
+   •	 Example: ftype txtfile="C:\Windows\System32\NOTEPAD.EXE" "%1"
 
-10.	assoc
-•	Description: Displays or modifies file extension associations.
-•	Example to display all associations:
-                    C:\Users\Mahrus Ali>assoc
+--------------------------------------------------------------------------------------------------------------
 
-11.	ftype
-•	Description: Displays or modifies file types that have been assigned file extension associations.
-•	Example:
-                    C:\Users\Mahrus Ali>ftype txtfile="C:\Windows\System32\NOTEPAD.EXE" "%1
+
