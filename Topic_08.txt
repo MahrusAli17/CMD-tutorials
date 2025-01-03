@@ -1,0 +1,120 @@
+Topic 08 - Creating Exporting Files through  _ Create_ Export _ Read Files via CUI
+
+Managing Files through  (Command Line)
+
+1. Export Data to a Text File
+- Export Command Output
+- Example:- 
+                dir > data.txt
+                Exports the output of "dir" to "data.txt".
+- Append Data  
+- Example:-
+                dir >> data.txt
+                Appends the output of "dir" to the existing "data.txt".
+
+--------------------------------------------------------------------------------------------------
+
+2. Create a Text File
+- Create an Empty File:  
+- Example:-
+                type nul > file.txt
+- Create a File with Content:  
+- Example:-
+                echo First line of text > file.txt
+
+--------------------------------------------------------------------------------------------------
+
+3. Write a Two-Page Essay
+- Use multiple "echo" commands:  
+- Example:-
+                echo This is the first paragraph of the essay. > essay.txt
+                echo This is the second paragraph of the essay. >> essay.txt
+                echo Continue writing your essay here... >> essay.txt
+
+--------------------------------------------------------------------------------------------------
+  
+4. Merge Two Files
+- Combine "file1.txt" and "file2.txt":  
+- Example:-
+                copy file1.txt + file2.txt merged.txt
+
+--------------------------------------------------------------------------------------------------
+ 
+5. Open a Text File in 
+- Open using a text editor (Notepad):  
+- Example:-
+                notepad file.txt
+
+--------------------------------------------------------------------------------------------------
+
+6. Read a Text File in 
+- Display file content:  
+- Example:-
+                type file.txt
+
+--------------------------------------------------------------------------------------------------
+
+ 7. Export a NUL File
+- Create an empty file:  
+- Example:-
+                type nul > emptyfile.txt
+
+--------------------------------------------------------------------------------------------------
+ 
+ 8. Open a File in Its Supported Software
+- Open with the default program:  
+- Example:-
+                start file.txt
+
+--------------------------------------------------------------------------------------------------
+To copy and export system information via , you can use the following commands
+--------------------------------------------------------------------------------------------------
+
+1. Export Full System Information
+- Use the "systeminfo" command:  
+- Example:-
+                systeminfo > systeminfo.txt
+  
+  This saves all system details (e.g., OS, memory, processor) to a file named "systeminfo.txt".
+
+--------------------------------------------------------------------------------------------------
+
+ 2. Export Specific System Information
+- Export details about network configuration:  
+- Example:-
+                ipconfig > networkinfo.txt
+  
+- Export detailed network adapter configuration:  
+- Example:-
+                ipconfig /all > fullnetworkinfo.txt
+  
+--------------------------------------------------------------------------------------------------
+
+ 3. Export Disk and Volume Information
+- Save disk drive information:  
+- Example:-
+                wmic diskdrive get > diskinfo.txt
+  
+  
+- Save volume information:  
+- Example:-
+                wmic volume get > volumeinfo.txt
+  
+--------------------------------------------------------------------------------------------------
+
+ 4. Export List of Installed Software
+- Use "wmic" to get installed programs:  
+- Example:-
+                wmic product get name,version > installed_programs.txt
+  
+--------------------------------------------------------------------------------------------------
+
+ 5. Export Running Processes
+- Save a list of running processes:  
+- Example:-
+                tasklist > running_processes.txt
+  
+--------------------------------------------------------------------------------------------------
+
+
+
