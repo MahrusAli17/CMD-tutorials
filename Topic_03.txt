@@ -1,62 +1,62 @@
-Topic III - Managing Tasks and Services using CMD - Start  
-Stop Commands
+Topic III -Managing Tasks and Services using CMD – Start & Stop Commands
+--------------------------------------------------------------------------------------------------
+1. List Running Processes
+    • tasklist
+    • Example: tasklist
 
-1. tasklist
-•	Description: Displays a list of currently running processes.
-•	Example:
-                C:\Users\Mahrus Ali> tasklist
+--------------------------------------------------------------------------------------------------
+2. Terminate Task by PID
+    • taskkill /PID [PID]
+    • Example: taskkill /PID 1234
 
-2. taskkill /PID
-•	Description: Terminates a task by its process ID (PID).
-•	Example:
-                C:\Users\Mahrus Ali> taskkill /PID 1234
+--------------------------------------------------------------------------------------------------
+3. Forcibly Terminate Task by PID
+    • taskkill /PID [PID] /F
+    • Example: taskkill /PID 1234 /F
 
-3. taskkill /PID /F
-•	Description: Forcibly terminates a task by its process ID (PID).
-•	Example:
-                C:\Users\Mahrus Ali>taskkill /PID 1234 /F
+--------------------------------------------------------------------------------------------------
+4. List Installed Device Drivers
+    • driverquery
+    • Example: driverquery
 
-4. driverquery
-•	Description: Displays a list of all installed device drivers and their properties.
-•	Example:
-                C:\Users\Mahrus Ali> driverquery
+--------------------------------------------------------------------------------------------------
+5. List Running Services
+    • net start
+    • Example: net start
 
-5. net start
-•	Description: Lists running services.
-•	Example:
-                C:\Users\Mahrus Ali> net start
+--------------------------------------------------------------------------------------------------
+6. Stop Running Service
+    • net stop "service-name"
+    • Example: net stop "Print Spooler"
 
-6. net stop "service-name"
-•	Description: Stops a running service.
-•	Example:
-                C:\Users\Mahrus Ali> net stop "Print Spooler"
+--------------------------------------------------------------------------------------------------
+7. Start Service
+    • net start "service-name"
+    • Example: net start "Print Spooler"
 
-7. net start "service-name"
-•	Description: Starts a service.
-•	Example:
-                C:\Users\Mahrus Ali> net start "Print Spooler"
+--------------------------------------------------------------------------------------------------
+8. Check Disk
+    • chkdsk [drive:]
+    • Example: chkdsk C:
 
-8. chkdsk
-•	Description: Checks the file system and status of the system's hard drive.
-•	Example:
-                C:\Users\Mahrus Ali> chkdsk C:
+--------------------------------------------------------------------------------------------------
+9. Scan and Repair System Files
+    • sfc /scannow
+    • Example: sfc /scannow
 
-9. sfc /scannow
-•	Description: Scans and repairs system files.
-•	Example:
-                C:\Users\Mahrus Ali> sfc /scannow
+--------------------------------------------------------------------------------------------------
+10. Shutdown Computer
+     • shutdown /s /t 0
+     • Example: shutdown /s /t 0
 
-10. shutdown /s /t 0
-•	Description: Shuts down the computer.
-•	Example:
-                C:\Users\Mahrus Ali> shutdown /s /t 0
+--------------------------------------------------------------------------------------------------
+11. Display Services in Each Process
+     • tasklist /svc
+     • Example: tasklist /svc
 
-11. tasklist /svc
-•	Description: Displays the services hosted in each process.
-•	Example:
-                C:\Users\Mahrus Ali> tasklist /svc
+--------------------------------------------------------------------------------------------------
+12. Query Service Information
+     • sc query
+     • Example: sc query
 
-12. sc query
-•	Description: Displays information about the specified service, or about all active services.
-•	Example:
-                C:\Users\Mahrus Ali>sc query
+--------------------------------------------------------------------------------------------------
