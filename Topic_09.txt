@@ -1,0 +1,91 @@
+Topic 09 - Format_ Boot _ Label USB or CD through CMD - Create Bootable USB or Labeling
+
+
+ Formatting a USB or CD
+1. Open Command Prompt as Administrator:
+   • Press 'Win + X' and select Command Prompt (Admin) or Windows PowerShell (Admin).
+
+--------------------------------------------------------------------------------------------------------------
+2. Enter DiskPart:
+   • Type 'diskpart' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+3. List Disks:
+   • Type 'list disk' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+4. Select Disk:
+   • Type 'select disk X' (replace 'X' with the disk number of your USB or CD) and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+5. Clean the Disk:
+   • Type 'clean' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+6. Create a Primary Partition:
+   • Type 'create partition primary' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+7. Format the Disk:
+   • Type 'format fs=ntfs quick' (or 'format fs=fat32 quick' for FAT32) and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+ Creating a Bootable USB
+1. Mount the ISO File:
+   • Open PowerShell as Administrator.
+   • Type 'Mount-DiskImage -ImagePath "C:\path\to\your.iso"' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+2. Enter DiskPart:
+   • Type 'diskpart' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+3. List Disks:
+   • Type 'list disk' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+4. Select Disk:
+   • Type 'select disk X' (replace 'X' with the disk number of your USB) and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+5. Clean the Disk:
+   • Type 'clean' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+6. Create a Primary Partition:
+   • Type 'create partition primary' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+7. Select the Partition:
+   • Type 'select partition 1' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+8. Make the Partition Active:
+   • Type 'active' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+9. Format the Partition:
+   • Type 'format fs=ntfs quick' (or 'format fs=fat32 quick' for FAT32) and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+10. Assign a Drive Letter:
+    • Type 'assign letter=X' (replace 'X' with a drive letter) and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+11. Exit DiskPart:
+    • Type 'exit' and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
+12. Copy the ISO Contents:
+    • Use the 'xcopy' command to copy the contents of the mounted ISO to the USB drive.
+
+--------------------------------------------------------------------------------------------------------------
+ Labeling a USB or CD
+1. Open Command Prompt as Administrator:
+   • Press 'Win + X' and select Command Prompt (Admin) or Windows PowerShell (Admin).
+
+--------------------------------------------------------------------------------------------------------------
+2. Enter Label Command:
+   • Type 'label X: "YourLabel"' (replace 'X' with the drive letter and '"YourLabel"' with your desired label) and press 'Enter'.
+
+--------------------------------------------------------------------------------------------------------------
