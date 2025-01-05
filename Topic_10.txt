@@ -1,0 +1,41 @@
+Topic 10 - Wireless Commands through CMD - Hotspot_ Password _ Network Commands
+--------------------------------------------------------------------------------------------------------------
+Creating a WiFi Hotspot
+1. Enable Hosted Network
+   • Syntax: netsh wlan set hostednetwork mode=allow ssid=YourSSID key=YourPassword
+   • Description: Replace `YourSSID` with your desired hotspot name and `YourPassword` with your desired password.
+
+--------------------------------------------------------------------------------------------------------------
+2. Start the Hosted Network
+   • Syntax: netsh wlan start hostednetwork
+
+--------------------------------------------------------------------------------------------------------------
+3. Stop the Hosted Network
+   • Syntax: netsh wlan stop hostednetwork
+   
+--------------------------------------------------------------------------------------------------------------
+Finding WiFi Password
+--------------------------------------------------------------------------------------------------------------
+1. List All Network Profiles
+   • Syntax: netsh wlan show profiles
+
+--------------------------------------------------------------------------------------------------------------
+2. Show Password for a Specific Network
+   • Syntax: netsh wlan show profile name="YourNetworkName" key=clear
+   • Description: Replace `YourNetworkName` with the name of the WiFi network.
+
+--------------------------------------------------------------------------------------------------------------
+Other Network Commands
+--------------------------------------------------------------------------------------------------------------
+1. Show Network Adapter Information
+   • Syntax: netsh wlan show drivers
+
+--------------------------------------------------------------------------------------------------------------
+2. Show All Network Adapters
+   • Syntax: netsh wlan show all
+   
+--------------------------------------------------------------------------------------------------------------
+3. Connect to a Network
+   • Syntax: netsh wlan connect name="YourNetworkName" ssid="YourNetworkName" key="YourPassword"
+   • Description: Replace `YourNetworkName` and `YourPassword` with the appropriate values.
+--------------------------------------------------------------------------------------------------------------
