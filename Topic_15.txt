@@ -1,0 +1,75 @@
+Topic 15 - Batch Scripting - Full Tutorial with Examples
+--------------------------------------------------------------------------------------------------------------
+What is Batch Scripting?
+Batch scripting involves writing a series of commands in a plain text file with a `.bat` or `.cmd` extension. When the file is executed, the commands run in sequence. Batch scripts are useful for automating repetitive tasks, managing system configurations, and more.
+--------------------------------------------------------------------------------------------------------------
+Basic Concepts
+1. Comments: Use `REM` or `::` to add comments.
+    REM This is a comment
+    :: This is also a comment
+----------------------------------------------------------------------------------   
+2. Variables: Define and use variables.
+   SET myvar=Hello
+   ECHO %myvar%
+----------------------------------------------------------------------------------   
+3. Conditional Statements: Use `IF` for conditional execution.
+   IF EXIST file.txt (
+       ECHO File exists.
+   ) ELSE (
+       ECHO File does not exist.
+   )
+-----------------------------------------------------------------------------------   
+4. Loops: Use `FOR` to iterate over a set of items.
+   FOR %%i IN (1 2 3) DO (
+       ECHO %%i
+   )
+-----------------------------------------------------------------------------------   
+5. Functions: Use `CALL` to call other batch scripts or functions within a script.
+   CALL :MyFunction
+   GOTO :EOF
+
+   :MyFunction
+   ECHO This is a function.
+   GOTO :EOF
+-----------------------------------------------------------------------------------   
+Examples
+--------------------------------------------------------------------------------------------------------------
+   • Example 1: Hello World
+   • A simple script that prints "Hello, World!" to the screen.
+        @ECHO OFF
+        ECHO Hello, World!
+        PAUSE
+
+--------------------------------------------------------------------------------------------------------------
+   • Example 2: Backup Script
+   • A script to back up a directory.
+        @ECHO OFF
+        SET source=C:\MyFolder
+        SET destination=D:\Backup
+        XCOPY %source% %destination% /E /I /H /C /Y
+        ECHO Backup completed.
+        PAUSE
+
+--------------------------------------------------------------------------------------------------------------
+   • Example 3: System Information
+   • A script to display system information.
+        @ECHO OFF
+        ECHO %DATE% %TIME%
+        SYSTEMINFO | FINDSTR /C:"OS" /C:"System Type" /C:"Total Physical Memory"
+        PAUSE
+
+--------------------------------------------------------------------------------------------------------------
+   • Example 4: File Cleanup
+   • A script to delete files older than 30 days from a directory.
+        @ECHO OFF
+        SET targetDir=C:\Temp
+        FORFILES /P %targetDir% /S /M *.* /D -30 /C "cmd /c del @path"
+        ECHO Cleanup completed.
+        PAUSE
+
+--------------------------------------------------------------------------------------------------------------
+   •  How to Run a Batch Script
+1. Create the Script: Open Notepad or any text editor and write your commands.
+2. Save the File: Save the file with a `.bat` or `.cmd` extension.
+3. Execute the Script: Double-click the file or run it from the Command Prompt.
+
