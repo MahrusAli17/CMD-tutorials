@@ -1,0 +1,26 @@
+ Topic 14 - Best Utility Commands in   Shutdown_ History_ Tree Commands
+ --------------------------------------------------------------------------------------------------------------
+1. Shutdown
+   • Definition: Shuts down, restarts, or logs off the system.
+   • Syntax: shutdown [option]
+                - /s: Shutdown the computer.
+                - /r: Restart the computer.
+                - /l: Log off.
+                - /t xx: Set a time delay before the action (xx in seconds).
+   • Example:   shutdown /s /t 30 (Shuts down the computer in 30 seconds)
+
+--------------------------------------------------------------------------------------------------------------
+2. History
+   • Definition: Displays the list of commands entered during the current session (available via doskey).
+   • Syntax: doskey /history
+   • Example: doskey /history
+
+--------------------------------------------------------------------------------------------------------------
+3. Tree
+   • Definition: Displays the directory structure of a drive or path graphically.
+   • Syntax: tree [drive:][path] [/F] [/A]
+                - /F: Display the names of the files in each folder.
+                - /A: Use ASCII instead of extended characters.
+   • Example: tree C:\Users /F (Displays the directory structure of the "Users" folder, including files)
+
+--------------------------------------------------------------------------------------------------------------
