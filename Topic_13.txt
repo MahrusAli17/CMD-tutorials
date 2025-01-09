@@ -1,0 +1,11 @@
+Topic 13 - Impressive Command in CMD - Star War Movie in CMD Terminal
+--------------------------------------------------------------------------------------------------------------
+
+Ah, the classic Easter egg! If you're ready to enjoy some fun in your CMD terminal, follow these steps to watch an ASCII version of "Star Wars: Episode IV – A New Hope":
+1.	Open Command Prompt.
+2.	Type the following command and press Enter:
+-	telnet towel.blinkenlights.nl
+Please note that telnet must be enabled on your machine for this to work. You might need to enable it through the Windows Features.
+Enjoy the show! It's an amusing way to see how creative people can get with simple text! 🌟
+
+--------------------------------------------------------------------------------------------------------------
