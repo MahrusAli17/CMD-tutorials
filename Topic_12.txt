@@ -1,0 +1,31 @@
+Topic 12 - Customization  Prompt Window - Color Changing_ Resizing _ Title Commands
+--------------------------------------------------------------------------------------------------------------
+
+1. Color Changing
+   • Definition: Changes the color of the text and background.
+   • Syntax: color <attribute>
+        - <attribute> is a two-digit hexadecimal number (0-9, A-F) where the first digit is the background color and the second digit is the text color.
+        - Example: color 0A (black background, green text)
+   • Example: color 1E (blue background, yellow text)
+
+--------------------------------------------------------------------------------------------------------------
+2. Resizing
+   • Definition: Resizes the Command Prompt window.
+   • Syntax: No direct  command, but can be done via properties.
+        - Right-click the title bar -> Properties -> Layout -> Window Size (Width and Height)
+   • Example: 
+        1. Right-click the title bar.
+        2. Select "Properties".
+        3. Go to the "Layout" tab.
+        4. Adjust "Window Size" (Width and Height).
+
+--------------------------------------------------------------------------------------------------------------
+3. Title
+   • Definition: Changes the title of the Command Prompt window.
+   • Syntax: title <text>
+        - <text> is the new title for the Command Prompt window.
+   • Example: title My Custom  Window
+
+--------------------------------------------------------------------------------------------------------------
+
+
