@@ -1,0 +1,34 @@
+Topic 11 - Networking Commands through CMD - Ping_ Tracert _ Nslookup Commands
+--------------------------------------------------------------------------------------------------------------
+
+1. Ping
+   • Definition: Tests the reachability of a host on an IP network.
+   • Syntax: ping <hostname/IP address> [-t] [-a] [-n count] [-l size]
+            •  -t: Ping the specified host until stopped.
+            •  -a: Resolve addresses to hostnames.
+            •  -n count: Number of echo requests to send.
+            •  -l size: Send buffer size.
+   • Example:   ping www.google.com
+
+--------------------------------------------------------------------------------------------------------------
+2. Tracert
+   • Definition: Traces the route packets take to reach a network host.
+   • Syntax: tracert <hostname/IP address> [-d] [-h maximum_hops] [-w timeout]
+            •  -d: Do not resolve addresses to hostnames.
+            •  -h maximum_hops: Maximum number of hops to search for the target.
+            •  -w timeout: Wait timeout milliseconds for each reply.
+   • Example:   tracert www.google.com
+
+--------------------------------------------------------------------------------------------------------------
+3. Nslookup
+   • Definition: Queries the DNS to obtain domain name or IP address mapping.
+   • Syntax: nslookup [-option] [hostname]
+   • Common options:
+            •  -timeout=x: Set the query timeout interval.
+            •  -port=x: Specify the port number to use.
+            •  -querytype=x: Specify the query type (e.g., A, MX).
+            •  -server=x: Specify the DNS server to use.
+   • Example:   nslookup www.google.com
+
+--------------------------------------------------------------------------------------------------------------
+
